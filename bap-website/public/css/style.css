@@ -18,6 +18,8 @@ header, main, nav, footer {
 
 .list__item {
     list-style-type: none;
+    width: 100px;
+    cursor: pointer;
 }
 
 .list__item--link {
@@ -25,10 +27,13 @@ header, main, nav, footer {
     text-decoration: none;
 }
 
-.list__item--link:hover {
+.list__item:hover {
     background-color: red;
 }
 
 .list__item--active {
     background-color: royalblue;
+    list-style-type: none;
+    width: 100px;
+    cursor: pointer;
 }

@@ -5,11 +5,7 @@
 @endsection()
 
 @section('nav')
-    <ul class="list">
-        <li class="list__item"><a href="/views/view1" class="list__item--link">view1</a></li>
-        <li class="list__item"><a href="/views/view2" class="list__item--link">view2</a></li>
-        <li class="list__item"><a href="/views/view3" class="list__item--link">view3</a></li>
-    </ul>
+    @include('layouts.navigationLayout', ['page' => 'homepage'])
 @endsection()
 
 @section('content')

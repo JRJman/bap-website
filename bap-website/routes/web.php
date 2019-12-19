@@ -11,26 +11,26 @@
 |
 */
 
-Route::get('/', 'HomeController@showPage');
+Route::get('/', 'HomeController@showPage')->name('homepage');
 
 Route::get('/contact', function () {
     return 'Contact';
-});
+})->name('contact');
 
-Route::get('/dit/is/een/lange-url/zeg','PageController@longUrl');
+Route::get('/dit/is/een/lange-url/zeg','PageController@longUrl')->name('lange-url');
 
-Route::redirect('/korte-url','/dit/is/een/lange-url/zeg');
+Route::redirect('/korte-url','/dit/is/een/lange-url/zeg')->name('korte-url');
 
-Route::get('/blog/artikel/{artikel}','BlogController@showArtikel')->where('artikel', '[A-Za-z]+');
+Route::get('/blog/artikel/{artikel}','BlogController@showArtikel')->name('blog');
 
 Route::prefix('mijn-account')->group(function(){
-    Route::get('instellingen', 'MijnAccountInstellingenController@showPage');
-    Route::get('bestellingen', 'MijnAccountBestellingenController@showPage');
+    Route::get('instellingen', 'MijnAccountInstellingenController@showPage')->name('mijn-account-instellingen');
+    Route::get('bestellingen', 'MijnAccountBestellingenController@showPage')->name('mijn-account-bestellingen');
 });
 
 Route::prefix('views')->group(function(){
-   Route::get('view1','ViewController@showPage1');
-   Route::get('view2','ViewController@showPage2');
-   Route::get('view3','ViewController@showPage3');
+   Route::get('view1','ViewController@showPage1')->name('view1');
+   Route::get('view2','ViewController@showPage2')->name('view2');
+   Route::get('view3','ViewController@showPage3')->name('view3');
 });
 
