@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aa34364-ec6d-43b2-841c-0cad17b58217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bap-website/resources/views/layouts/navigationLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bap-website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bap-website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bap-website/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/bap-website/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +123,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/sinterklaas" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/test2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,7 +171,9 @@
       <workItem from="1575016205190" duration="27000" />
       <workItem from="1575531497375" duration="4770000" />
       <workItem from="1575621335293" duration="69000" />
-      <workItem from="1576740818848" duration="4346000" />
+      <workItem from="1576740818848" duration="4948000" />
+      <workItem from="1577287319976" duration="26000" />
+      <workItem from="1578555099752" duration="560000" />
     </task>
     <servers />
   </component>
@@ -191,5 +182,11 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577287345995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577287345995" />
   </component>
 </project>
