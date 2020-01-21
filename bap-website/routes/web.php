@@ -11,6 +11,9 @@
 |
 */
 
+/*
+    DIT ZIJN MIJN TEST PAGINAS DIE IK HEB GEMAAKT MET DE FILMPJES
+
 Route::get('/', 'HomeController@showPage')->name('homepage');
 
 Route::get('/contact', function () {
@@ -33,4 +36,18 @@ Route::prefix('views')->group(function(){
    Route::get('view2','ViewController@showPage2')->name('view2');
    Route::get('view3','ViewController@showPage3')->name('view3');
 });
+*/
+
+// DIT ZIJN DE PAGINAS DIE IK MAAK VOOR DE WEBSITE ALS EINDPRODUCT
+
+Route::get('/', 'WebsiteHomeController@showPage')->name('homepage');
+Route::get('/over-ons', 'WebsiteOverOnsController@showPage')->name('over-ons');
+Route::get('/login', 'WebsiteLoginController@showPage')->name('login');
+Route::get('/registeer', 'WebsiteRegisteerController@showPage')->name('registeer');
+Route::get('/winkelwagen', 'WebsiteWinkelwagenController@showPage')->name('winkelwagen');
+
+Route::get('/artikel/{artikelnummer}','WebsiteArtikelController@showArtikel')->name('artikel');
+Route::get('/account/{accountId}', 'WebsiteSearchController@showPage')->name('account');
+
+
 

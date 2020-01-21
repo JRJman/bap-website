@@ -1,0 +1,30 @@
+.nav {
+    background-color: #e69500;
+}
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    list-style-type: none;
+}
+
+.nav__list--item {
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.nav__list--item a {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav__list--item:hover {
+    background-color: #ffd280;
+}
+
+.nav__list--item--active {
+    background-color: #ffd280;
+}
