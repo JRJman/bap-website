@@ -42,12 +42,14 @@ Route::prefix('views')->group(function(){
 
 Route::get('/', 'WebsiteHomeController@showPage')->name('homepage');
 Route::get('/over-ons', 'WebsiteOverOnsController@showPage')->name('over-ons');
-Route::get('/login', 'WebsiteLoginController@showPage')->name('login');
-Route::get('/registeer', 'WebsiteRegisteerController@showPage')->name('registeer');
+Route::get('/login', 'WebsiteLoginController@index')->name('login.index');
+Route::post('/login', 'WebsiteLoginController@store')->name('login.store');
+Route::get('/registeer', 'WebsiteRegisteerController@create')->name('registeer.create');
+Route::post('/registeer', 'WebsiteRegisteerController@store')->name('registeer.store');
 Route::get('/winkelwagen', 'WebsiteWinkelwagenController@showPage')->name('winkelwagen');
 
 Route::get('/artikel/{artikelnummer}','WebsiteArtikelController@showArtikel')->name('artikel');
-Route::get('/account/{accountId}', 'WebsiteSearchController@showPage')->name('account');
+Route::get('/account/{accountId}', 'WebsiteAccountController@showPage')->name('account');
 
 
 
