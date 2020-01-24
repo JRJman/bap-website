@@ -1,11 +1,11 @@
 @extends('website.layouts.mainLayout')
 
 @section('title')
-    <title>Account</title>
+    <title>404</title>
 @endsection()
 
 @section('styles')
-    <link href="/css/websiteAccount.css" rel="stylesheet">
+    <link href="/css/404.css" rel="stylesheet">
 @endsection()
 
 @section('header')
@@ -13,13 +13,14 @@
 @endsection()
 
 @section('nav')
-    @include('website.layouts.navigationLayout', ['page'=>'account'])
+    @include('website.layouts.navigationLayout', ['page'=>'404'])
 @endsection()
 
 @section('content')
-    Coming soon
+    <div class="error">404</div>
+    <p class="insult">Your stupid</p>
 @endsection()
 
 @section('footer')
-    Coming never
+    @include('website.footer')
 @endsection()

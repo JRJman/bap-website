@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="/css/websiteHeader.css" rel="stylesheet">
     <link href="/css/websiteNav.css" rel="stylesheet">
-    @section('styles')
+    <link href="/css/websiteFooter.css" rel="stylesheet">
+@section('styles')
         <link href="/css/websiteHome.css" rel="stylesheet">
     @show()
 </head>

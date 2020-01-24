@@ -21,5 +21,5 @@
 @endsection()
 
 @section('footer')
-    Coming never
+    @include('website.footer')
 @endsection()

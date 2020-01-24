@@ -41,15 +41,15 @@ Route::prefix('views')->group(function(){
 // DIT ZIJN DE PAGINAS DIE IK MAAK VOOR DE WEBSITE ALS EINDPRODUCT
 
 Route::get('/', 'WebsiteHomeController@showPage')->name('homepage');
-Route::get('/over-ons', 'WebsiteOverOnsController@showPage')->name('over-ons');
-Route::get('/login', 'WebsiteLoginController@index')->name('login.index');
-Route::post('/login', 'WebsiteLoginController@store')->name('login.store');
-Route::get('/registeer', 'WebsiteRegisteerController@create')->name('registeer.create');
-Route::post('/registeer', 'WebsiteRegisteerController@store')->name('registeer.store');
-Route::get('/winkelwagen', 'WebsiteWinkelwagenController@showPage')->name('winkelwagen');
 
 Route::get('/artikel/{artikelnummer}','WebsiteArtikelController@showArtikel')->name('artikel');
-Route::get('/account/{accountId}', 'WebsiteAccountController@showPage')->name('account');
 
+Route::get('/over-ons', 'WebsiteOverOnsController@showPage')->name('over-ons');
 
+Route::get('/admin', 'WebsiteAdminController@showPage')->name('admin');
+Route::post('/admin/store', 'WebsiteAdminController@store')->name('admin.store');
+Route::get('/admin/destroy/{id}', 'WebsiteAdminController@destroy')->name('admin.destroy');
+Route::get('/admin/edit/{id}', 'WebsiteAdminController@edit')->name('admin.edit');
+Route::post('/admin/update/{id}', 'WebsiteAdminController@update')->name('admin.update');
 
+Auth::routes();
