@@ -3,7 +3,6 @@
 $pageNames = [
         'Home' => 'homepage',
         'Over Ons' => 'over-ons',
-        'Account' => 'account.index',
         'Admin' => 'admin'
     ];
 $number = 0;
